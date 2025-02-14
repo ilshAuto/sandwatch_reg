@@ -1,5 +1,9 @@
 # ILSH Sandwatch V1.0
 
+## 社区支持
+- 💬 官方：[空投信息、脚本TG频道](https://t.me/ilsh_auto)
+- 🐦 最新公告：[我们的推特](https://x.com/hashlmBrian)
+
 ## ⚠️ 重要安全警告
 
 **涉及敏感信息操作须知：**
