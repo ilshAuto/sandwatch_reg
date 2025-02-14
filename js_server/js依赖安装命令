@@ -1,0 +1,2 @@
+安装完npm之后，复制到命令行运行即可。
+npm init -y && npm install express body-parser ethers @solana/web3.js bip39 bs58 socks-proxy-agent ed25519-hd-key node-fetch@2 tweetnacl

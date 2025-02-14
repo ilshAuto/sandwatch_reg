@@ -1,0 +1,30 @@
+出现任何问题，请使用deepseek、chatgpt、claude，如果无法解决请联系我：
+@echo off
+echo Starting installation script...
+
+:: 检查是否已安装 Node.js
+where node >nul 2>nul
+if %errorlevel% neq 0 (
+    echo Node.js not found. Please install Node.js first.
+    echo Download from: https://nodejs.org/
+    echo Please run this script again after installing Node.js
+    pause
+    exit /b
+)
+
+:: 创建项目目录
+mkdir solana-sign-server
+cd solana-sign-server
+
+:: 初始化 npm 项目
+echo Initializing npm project...
+call npm init -y
+
+:: 安装所需的包
+echo Installing required packages...
+call npm install express body-parser ethers @solana/web3.js bip39 bs58 socks-proxy-agent ed25519-hd-key node-fetch@2 tweetnacl
+
+echo Installation completed!
+echo.
+echo You can now start writing your server code.
+pause
