@@ -68,17 +68,17 @@ app.post('/api/solana/sign', async (req, res) => {
             });
         }
 
-        const wallet_proxy = proxy.replace('socks5', 'socks5h');
-        const proxyAgent = new SocksProxyAgent(wallet_proxy);
+        // const wallet_proxy = proxy.replace('socks5', 'socks5h');
+        // const proxyAgent = new SocksProxyAgent(wallet_proxy);
 
         // 创建带代理的连接配置
         const rpcUrl = 'https://api.mainnet-beta.solana.com';
-        const connection = new Connection(rpcUrl, {
-            fetchMiddleware: (url, options) => {
-                options.agent = proxyAgent;
-                return fetch(url, options);
-            }
-        });
+        // const connection = new Connection(rpcUrl, {
+        //     fetchMiddleware: (url, options) => {
+        //         options.agent = proxyAgent;
+        //         return fetch(url, options);
+        //     }
+        // });
 
         // 使用BIP44路径派生
         const seed = bip39.mnemonicToSeedSync(mnemonic);
