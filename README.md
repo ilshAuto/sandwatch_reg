@@ -13,6 +13,7 @@
 3. 禁止将助记词上传至任何网络服务
 
 ## 🚀 快速开始
+可参考WALLET_SERVER: https://github.com/ilshAuto/wallet_server/releases/tag/wallet_server
 
 本代码分js、python两部分。
 js：用于sol链签名
